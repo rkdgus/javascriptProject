@@ -1,0 +1,110 @@
+*{
+	margin:0;
+	padding:0;
+	
+}
+li{list-style:none;}
+
+a{
+	color:black;
+	text-decoration: none;
+	
+}
+#header{
+	width:100%;
+	height:974px;
+
+	text-align:center;
+	background: url("../images/parallax4.jpg")no-repeat;
+	background-size:100%;
+}
+#header img{
+	width:100%;
+	
+}
+#header #welcome{
+	display:inline-block;
+	font-size: 4em;
+	font-weight: bold;
+	border:5px solid black;
+	padding:10px 20px;
+	margin-top:200px;
+	font-family: 'BebasNeueRegular', sans-serif;
+	margin-bottom:100px;
+}
+
+#header #welcome:hover{
+	border:5px solid white;
+	color:white;
+}
+
+#header #header-text{
+	width:100%;
+	background: rgba(0, 0, 0, 0.3);
+	
+}
+
+#header #header-text .swiper-slide p{
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:6.5em;
+	color:white;
+	line-height: 250px;
+	word-spacing: -20px;
+	
+}
+#header #header-text .swiper-slide span{
+	color:#FFA400;
+}
+
+#header #header-text .swiper-slide{
+	height:250px;
+}
+footer{
+	background:#FFA400;
+	height:150px;
+	text-align: center;
+	
+	
+}
+footer p{
+	padding-top:50px;
+	font-size:12px;
+}
+footer p span{
+	color:#333;
+	font-size:11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
