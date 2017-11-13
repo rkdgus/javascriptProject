@@ -1,8 +1,18 @@
+@font-face{
+	font-family:'BebasNeueRegular';
+	src:url("../font/BebasNeue Regular.otf") ;
+}
+
 *{
 	margin:0;
 	padding:0;
+	font-family:'BebasNeueRegular', sans-serif;
 	
 }
+body{
+	
+}
+
 li{list-style:none;}
 
 a{
@@ -12,31 +22,31 @@ a{
 }
 #header{
 	width:100%;
-	height:974px;
-
+	height:950px;
 	text-align:center;
 	background: url("../images/parallax4.jpg")no-repeat;
+	
+	background-attachment: fixed;
+	transform: translateZ(.50px) scale(1) ;
 	background-size:100%;
 }
 #header img{
 	width:100%;
-	
+	height:100%;
 }
 #header #welcome{
 	display:inline-block;
-	font-size: 4em;
+	font-size: 5.5em;
 	font-weight: bold;
 	border:5px solid black;
-	padding:10px 20px;
+	padding:1px 20px;
 	margin-top:200px;
 	font-family: 'BebasNeueRegular', sans-serif;
 	margin-bottom:100px;
+	
 }
 
-#header #welcome:hover{
-	border:5px solid white;
-	color:white;
-}
+
 
 #header #header-text{
 	width:100%;
@@ -47,10 +57,10 @@ a{
 #header #header-text .swiper-slide p{
 	font-weight:bold;
 	text-transform:uppercase;
-	font-size:6.5em;
+	font-size:9em;
 	color:white;
 	line-height: 250px;
-	word-spacing: -20px;
+	
 	
 }
 #header #header-text .swiper-slide span{
@@ -60,13 +70,32 @@ a{
 #header #header-text .swiper-slide{
 	height:250px;
 }
+
+#topBtn{
+	border-radius:50px;
+	background: gray;
+	width:40px;
+	height:40px;
+	text-align: center;
+	line-height: 38px;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+	z-index: 20;
+}
+
+
+
 footer{
+	clear:both;
+	width:100%;
 	background:#FFA400;
 	height:150px;
 	text-align: center;
-	
+	margin-top:10px;
 	
 }
+
 footer p{
 	padding-top:50px;
 	font-size:12px;
@@ -75,35 +104,618 @@ footer p span{
 	color:#333;
 	font-size:11px;
 }
+#container{
+	width:100%;
+}
 
+.page-header{
+	position: fixed;
+	top:0;
+	background: rgba(250,250,250,0.9);
+	z-index: 9999;
+	}
 
+#menu{
+	width:100%;
+	height:80px;
+	line-height: 80px;
+	box-shadow:1px 5px 6px #EAEAEA;
+ 	
+}
+#menu img{
+	margin-top:20px;
+	margin-left:40px;
+	line-height: 80px;
+}
+#menu ul{
+	float:right;
+	margin-right:20px;
+	
+}
+#menu li{
+	float: left;
+	text-transform: uppercase;
+	margin:0 20px;
+	font-size: 1.7em;
+	font-weight: bold;
+	position: relative;
+}
+#menu #home a{
+	color:#FFA400;
+}
+#menu li a{
+	color:#666;
+	
+}
+#menu li a span{
+	color:red;
+}
+#menu li p{
+	font-size: 14px;
+	line-height: 14px;
+	width:200px;
+	margin:0 auto;
+	padding:7px;
+	font-weight: normal;
+	color:#8a8c93;
+	
+}
+#menu li p span{
+	margin-top:5px;
+	float: left;
+	margin-left:10px;
+	
+} 
+#menu li p input{
+	width:180px;
+	height:30px;
+	border:1px solid #EAEAEA;
+	border-radius:3px;
+}
+#menu li div{
+	position:absolute;
+	top:80px;
+	right:0;
+	width:350px;
+	bolder:1px solid black;
+	background: white;
+	height:320px;
+	overflow: hidden;
+	text-align:center;
+	
+}
+#menu li div #plane{
+	width:40px;
+	margin:0;
+	position: absolute;
+	top:8px;
+	left:20px;
+}
+#menu li div #back{
+	width:20px;
+	margin:0;
+	position: absolute;
+	top:20px;
+	right:20px;
+}
 
+#menu li div h1{
+	height:55px;
+	font-size:25px;
+	background:#FFA400; 
+	color:white;
+	text-align: center;
+	line-height: 60px;
+}
+#menu li div button{
+	border:none;
+	width:200px;
+	
+	height:60px;
+	
+	
+	background:#FFA400; 
+	border-radius:3px;
+}
+#menu li div button a{
+	display:inline-block;
+	color:white;
+	font-size: 25px;
+	width:100%;
+	line-height: 60px;
+}
 
+#portfolio{
+	width:100%;
+	margin:80px 0;
+	
+}
 
+.title h1{
+	text-transform: uppercase;
+	color:white;
+	text-align: center;
+	font-size:5em;
+	
+	border:5px solid white;
+	
+}
+.title{
+	background: #FFA400;
+	width:450px;
+	
+	margin:20px auto;
+	padding:4px;
+	line-height: 80px;
+	
+}
 
+.subtitle{
+	color:rgb(81,90,95);
+	text-align: center;
+	margin-bottom:70px;
+}
+.subtitle span{
+	color:#FFA400;
+}
+#portfolio #portfolio_menu{
+	width:800px;
+	margin:20px auto;
+	text-align: center;
+}
 
+#portfolio #portfolio_menu li{
+	display: inline;
+	margin:10px;
+	text-align: center;
+	border:2px solid rgb(81,90,95);
+	padding:5px;
+	
+}
 
+#portfolio #portfolio_menu li a{
+	color:rgb(81,90,95);
+	text-transform: uppercase;
+	font-weight: bold;
+}
 
+#portfolio #portfolio_menu li:hover{
+	border:2px solid #FFA400;
+}
 
+#portfolio #portfolio_menu li:hover a{
+	color: #FFA400;
+}
+#sliderImg{
+	overflow: hidden;
+	margin-top:30px;
+}
+#sliderImg li{
+	width:20%;
+	float: left;
+	position: relative;
+	border-bottom:1px solid black;
+}
+#sliderImg li div{
+	position:absolute;
+	z-index: 10;
+	width:100%;
+	height: 100%;
+	top:0;
+	background: #FFA400;
+	display: none;
+	text-align: center;
+	
+	
+}
 
+#sliderImg li div h1{
+	color:white;
+	margin-top:22%;
+}
 
+#sliderImg li div p{
+	color:white;
+	
+}
 
+#sliderImg li div img{
+	width:20%;
+}
+#sliderImg li img{
+	width:100%;
+}
 
+#about_migo{
+	
+	width:100%;
 
+}
 
+.back_gray{
+	width:100%;
+	background: #F6F6F6;
+	text-align: center;
+}
 
+#about_migo .back_gray #p{
+	color:#FFA400;
+	font-size: 35px;
+	margin-bottom:50px;
+}
 
+#about_migo .back_gray h4{
+	padding-top:50px;
+	color:rgb(81,90,95);
+	font-size: 22px;
+	
+}
+#about_migo .back_gray .wrap-img{
+	display:inline-block;
+	margin:30px;
+	text-align: center;
+	
+	
+}
+#about_migo .back_gray .wrap-img >div{
+	width:210px;
+	height:130px;
+	background: #FFA400;
+	text-align: center;
+	line-height: 190px;
+	border-radius:3px;
+	position: relative;
+	margin:0 auto;
+	 margin-bottom:20px;
+}
 
+#about_migo .back_gray .a{
+	background:#F6F6F6;
+	position:absolute;
+    width: 0;
+    height: 0;
+    border: 15px solid #FFA400;
+    border-bottom: 0px solid transparent !important;
+    border-right: 20px solid transparent !important;
+    border-left: 20px solid transparent !important;
+ 	right:85px;
+    top:130px;
+   
+}
 
+.migo-title{
+	color:rgb(81,90,95);
+	font-size: 30px;
+}
+.migo-p{
+	color:rgb(81,90,95);
+	font-size: 12px;
+}
 
+#num{
+	width:80%;
+	margin:0 auto;
+	text-align: center;
+}
+#num div{
+	display: inline-block;
+	text-align: center;
+	margin:40px;
+}
 
+#num div h1{
+	font-size:100px;
+	font-family: "나눔체";
+	color:#FFA400;
+}
+#num div h1 span{
+	font-size:100px;
+	font-family: "나눔체";
+	color:#FFA400;
+}
 
+#num div p{
+	font-size:20px;
+	color:rgb(81,90,95);
+}
+#img-div{
+	background: url("../images/parallax1.jpg") no-repeat;
+	background-size:100%;
+	width:100%;
+	height:550px;
+	text-align: center;
+	overflow: hidden;
+	background-attachment: fixed;
+}
 
+#img-div h2{
+	color:white;
+	font-size:36px;
+	font-weight: normal;
+	margin-top:190px;
+}
+#img-div h2 span{
+	color:#FFA400;
+	font-size: 50px;
+}
 
+#img-div p{
+	margin-top:20px;
+	color:white;
+}
 
+#our_services{
+	margin-top:80px;
+	width:100%;
+}
 
+#back_gray2{
+	width:100%;
+	background: #F6F6F6;
+	text-align: center;
+	overflow: hidden;
+	margin:0 auto;
+}
+#back_gray2 > div{
+	background: white;
+	width:300px;
+	display:inline-block;
+	float:center;
+	margin:50px 10px;
+	border:1px solid #ddd;
+	overflow: hidden;
+}
+#back_gray2 > div h1{
+	color:rgb(81,90,95);
+	font-weight: normal;
+	font-size:30px;
+	margin:20px 0;
+}
 
+#back_gray2 > div h3{
+	color:rgb(81,90,95);
+	margin-bottom:10px;
+	font-size:22px;
+	font-weight: normal;
+}
+#back_gray2 > div ul{
+	text-align:center;
+	width:100%;
+	
+}
+#back_gray2 > div li{
+	width:85%;
+	margin:0 auto;
+	color:rgb(81,90,95);
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom:1px dashed #c0c0c0;
+	padding:10px;
+	
+}
+#back_gray2 > div li:last-CHILD{
+	border-bottom:none;
+}
+#back_gray2 > div p{
+	color:rgb(81,90,95);
+	padding:10px;
+	font-size:12px;
+	margin-bottom:20px;
+}
+#back_gray2 > div div{
+	background:#FFA400;
+	height:150px;
+	width:150px;
+	border-radius:160px;
+	margin:0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+#back_gray2 > div div div{
+	
+	border:4px solid white;
+	height:89%;
+	border-radius:200px;
+	width:89%;
+	margin:4px auto;
+	
+}
 
+#back_gray2 > div div div img{
+	margin-top:33px;
+
+}
+#fast{
+	width:80%;
+	margin:0 auto;
+	text-align: center;
+	height:150px;
+}
+
+#fast h1{
+	margin-top:50px;
+	font-weight: normal;
+	color:rgb(81,90,95);
+}
+#fast button{
+	margin-top:20px;
+	background: #FFA400;
+	width:120px;
+	height:40px;
+	border: none;
+	border-radius:3px;
+	box-shadow:1px 2px 3px #EAEAEA;
+}
+
+#fast button a{
+		display: inline-block;
+	width:100%;
+	height:100%;
+	color:white;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+#comment_wrap{
+	width:100%;
+	background: url("../images/parallax3.jpg")no-repeat;
+	background-size:100%;
+	background-attachment:fixed;
+	height:600px;
+	text-align: center;
+	overflow: hidden;
+}
+#comment_wrap #border_white{
+	background: #FFA400;
+	width:55px;
+	height:55px;
+	text-align: center;
+	overflow: hidden;
+	border-radius:55px;
+	border:4px solid white;
+	margin:0 auto;
+	margin-top:130px;
+}
+#comment_wrap #border_white img{
+	margin-top:15px;
+}
+
+#comment_wrap h2{
+	margin-top:15px;
+	color:white;
+	font-size:27px;
+	margin-bottom:30px;
+}
+#comment_wrap p{
+	color:white;
+}
+#comment_wrap .bx{
+	width:50%;
+	margin:0 auto;
+}
+
+.comment{
+	border-bottom:1px solid white;
+	border-top:1px solid white;
+	padding:15px;
+	margin-bottom:10px;
+
+	
+}
+
+#out_bx{
+	width:50%;
+	margin:0 auto;
+}
+
+#comment_wrap .arrow{
+	border-radius:50px;
+	border:2px solid white;
+	background:  #FFA400;
+	width:25px;
+	padding:3px;
+	margin:15px 3px;
+}
+#phone{
+	background: url("../images/parallax4.jpg") no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	width:100%;
+	height:600px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#phone div{
+	width:33%;
+	margin:0 auto;
+	height:100px;
+	line-height: 100px;
+	background: rgba(250,250,250,0.5);
+	font-size:40px;
+	padding:10px;
+}
+#phone h3{
+	color:white;
+	font-size:35px;
+	margin:180px 0 10px 0;
+}
+#phone p{
+	color:white;
+	font-size:25px;
+}
+#help{
+	width:100%;
+	text-align: center;
+}
+#help .title{
+	margin-top:80px;
+}
+#help .title h1{
+	font-size:65px;
+	font-weight: normal;
+}
+.wrap_input{
+	overflow:hidden;
+	text-align:center;
+	display: inline-block;
+	width:450px;
+	margin:10px;
+	background: #F6F6F6;
+	border-radius:3px;
+}
+.wrap_input input{
+	display: block;
+	width:430px;
+	height:60px;
+	margin:0 auto 8px;
+	border: 1px solid #cacacc;
+	border-radius:3px;
+	padding-left:10px;
+	
+}
+
+.wrap_input select{
+	width:442px;
+	height:62px;
+	margin:0 auto 8px;
+	border: 1px solid #cacacc;
+	border-radius:3px;
+	padding-left:10px;
+	color:rgb(81,90,95);
+}
+#wrap_textarea{
+	background: #F6F6F6;
+	width:913px;
+	margin:0 auto;
+	padding:5px;
+	border-radius:3px;
+}
+#wrap_textarea textarea{
+	border: 1px solid #cacacc;
+	border-radius:3px;
+	color:rgb(81,90,95);
+	
+}
+#submit{
+	width:920px;
+	height:60px;
+	background: #FFA400;
+	border:none;
+	box-shadow:2px 3px 3px #EAEAEA;
+	margin:10px 0 80px;
+	border-radius:3px;
+	overflow: hidden;
+}
+#submit a{ 
+	display: inline-block;
+	width:100%;
+	height:100%;
+	line-height: 80px;
+}
+.menu_li{
+	
+}
 
 
 
